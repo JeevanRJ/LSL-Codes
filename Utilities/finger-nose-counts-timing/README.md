@@ -1,9 +1,6 @@
 # Keyboard-Based Touch Counter (Key Press = Event)
 
-This MATLAB script implements a **keyboard-driven event counter**, where **the key press itself is the behavioral target**.  
-Each press of a designated key is treated as a **touch event**, timestamped, categorized (left vs right), and logged to disk.
-
-This tool is intended for **simple motor counting tasks** (e.g., finger–nose counting, alternating finger tapping) where **physical hardware is not required** and the keyboard acts as the response device.
+This MATLAB script implements simple way to record number of key presses and corresponding timing during finger to nose coordination sensorimotor task. The two programable external keys act as hardware targets for the task. External keys were programed as space and enter inputs. 
 
 ---
 
@@ -85,12 +82,10 @@ This makes it easy to:
 - Alternating finger tapping
 - Simple motor rhythm assessments
 - Behavioral backup logging during sensor failures
-- Pilot experiments or training sessions
-- Low-overhead human factors or motor-control studies
 
 ---
 
-## Timing Notes (Important)
+## Timing Notes
 
 - Timestamps are generated using:
 ```matlab
@@ -100,14 +95,9 @@ datetime('now')
 - This provides **millisecond resolution**, but timing accuracy is limited by:
   - Operating system scheduling
   - Keyboard polling latency
-
-✅ Suitable for **counts and rhythm analysis**  
-⚠️ Not intended for high-precision reaction-time experiments
-
 ---
 
 ## How to Exit Safely
-
 - Press **Escape (Esc)** to:
   - Save all data
   - Print final counts to the MATLAB Command Window
@@ -117,21 +107,8 @@ Closing the window manually will also display final counts, but **Esc is recomme
 
 ---
 
-## Customization Ideas (Optional)
-
-You can easily adapt this script to:
-- Change key mappings (e.g., `L` / `R`)
-- Add auditory or visual feedback per press
-- Save per-trial CSV instead of Excel
-- Automatically parse subject/trial IDs
-- Stream events via LSL for multimodal synchronization
-
----
-
 ## License / Attribution
-
-If this script is adapted from prior code, retain original attribution and follow the original license.  
-If you are the primary author, you may distribute this file under your project’s license (e.g., MIT).
+MIT license
 
 ---
 
