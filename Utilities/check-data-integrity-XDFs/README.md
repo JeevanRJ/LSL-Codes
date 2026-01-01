@@ -18,7 +18,7 @@ If everything looks good, it shows **“All data okay”** and plays a **low-fre
 
 Run it directly in MATLAB:
 ```matlab
-quick_xdf_data_health_check
+data_integrity_checker_for_xdf
 ```
 
 ---
@@ -138,14 +138,6 @@ If you want deeper QC, consider adding:
 
 ---
 
-## Suggested enhancements (optional)
-
-- Add an “Other” category to report missing `Gyroscope`, `Accelerometer`, etc.
-- Print a compact table with sample counts per stream
-- Add a threshold (e.g., “fail if < N samples”)
-- Auto-detect trial name and write a log file per session
-
----
 
 ## Summary
 
