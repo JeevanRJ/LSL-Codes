@@ -7,3 +7,7 @@ This project builds upon and integrates functionality from the following open-so
   Developed by Kieran Nichols (NeuroErgonomics Lab), licensed under the MIT License.
 
 The original repository provides scripts and utilities for data streaming using the Lab Streaming Layer (LSL).
+
+## Utilities
+
+This folder contains supporting scripts for error checking, validation, and helper functions used across the data streaming and post-processing pipelines.
